@@ -1,19 +1,31 @@
 # Instalação do Docker Desktop no Linux Ubuntu 22.04
 ## A instalação foi feita em uma máquina virtual usando o VirtualBox
 ### VirtualBox
-    VirtualBox é um software de virtualização desenvolvido pela empresa Innotek depois comprado pela Sun Microsystems que posteriormente foi comprada pela Oracle que, como o VMware Workstation, visa criar ambientes para instalação de sistemas distintos. 
+!["VirtualBox"](https://www.megaleechers.com/storage/Oracle-VM-VirtualBox-Icon.png)
+    VirtualBox é um software de virtualização desenvolvido pela empresa Innotek depois comprado pela Sun Microsystems 
+    que posteriormente foi comprada pela Oracle que, como o VMware Workstation, visa criar ambientes para instalação 
+    de sistemas distintos. 
 
     https://download.virtualbox.org/virtualbox/6.1.36/VirtualBox-6.1.36-152435-Win.exe
 
-    ### Após a instalação e criação da máquina Virtual para o sistema Ubuntu,  você deve acessar as configuração da maquina, ir ao item sistema, clicar na guia processador e habilitar "habilitar VT-x/AMD-V alinhado".
+    ### Após a instalação e criação da máquina Virtual para o sistema Ubuntu,  você deve acessar as configuração da maquina,
+    ir ao item sistema, clicar na guia processador e habilitar "habilitar VT-x/AMD-V alinhado".
 
 ### Linux Ubuntu 22.04
-    Ubuntu é um sistema operacional ou sistema operativo de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo. Esta distribuição Linux é desenvolvida pela Canonical Ltd. 
+!["Linux Ubuntu"](https://iconarchive.com/download/i98405/dakirby309/simply-styled/OS-Ubuntu.ico)
+    Ubuntu é um sistema operacional ou sistema operativo de código aberto, construído a partir do núcleo Linux, baseado no Debian 
+    e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo. 
+    Esta distribuição Linux é desenvolvida pela Canonical Ltd. 
 
     https://ubuntu.com/download/desktop
 
 ### Docker
-    Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração.
+!["Docker"](https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/ywjqppks5ffcnbfjuttq)
+      Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema 
+    operacional para entregar software em pacotes chamados contêineres. 
+      Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração.
+      
+      https://desktop.docker.com/linux/main/amd64/docker-desktop-4.10.1-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64
 
 ## Configuração e instalação de ambiente
 
