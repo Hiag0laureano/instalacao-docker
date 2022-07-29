@@ -8,7 +8,7 @@
 
     https://download.virtualbox.org/virtualbox/6.1.36/VirtualBox-6.1.36-152435-Win.exe
 
-    ### Após a instalação e criação da máquina Virtual para o sistema Ubuntu,  você deve acessar as configuração da maquina,
+ ### Após a instalação e criação da máquina Virtual para o sistema Ubuntu,  você deve acessar as configuração da maquina,
     ir ao item sistema, clicar na guia processador e habilitar "habilitar VT-x/AMD-V alinhado".
 
 ### Linux Ubuntu 22.04
@@ -32,20 +32,20 @@
 ### Pós-instalação do Linux 
     Após a instalação do Linux ubuntu 20.04, você deve execultar alguns comandos para utilizar o sistema e deixa-lo preparando para a instalação do docker.
 
-    ### Atualização dos pacotes
-        ```console
+### Atualização dos pacotes
+```console
         $ sudo apt update
-        ```
+```
 
-    ### Atualização do sistema
-        ```console
+ ### Atualização do sistema
+```console
         $ sudo apt upgrade
-        ```
+```
 
     ### Reinicie o sistema
-        ```console
+```console
         $ reboot
-        ```
+```
 ### Instalação do Docker desktop 
 
     Download do docker desktop
@@ -57,11 +57,11 @@
      1º - Clicar com o botão direito do mouse sobre o arquivo e escolher o Software Install.
 
      2º - Abrir o terminal e ir até a pasta(diretório) download e execultar o comando de instalação:
-        ```console
+```console
             $ sudo apt install ./docker-desktop-4.10.1-amd64.deb
-        ```
-    ### Caso retorne menssagem de erro referente ao docker-ce e/ou docker-cli, execultae os comando abaixo:
-        ```console
+```
+### Caso retorne menssagem de erro referente ao docker-ce e/ou docker-cli, execultae os comando abaixo:
+```console
             $ sudo sudo apt-get update
 
             $ sudo apt-get install \
@@ -69,31 +69,35 @@
                 curl \
                 gnupg \
                 lsb-release
-        ```
+```
         Adicionar as chaves de GPG oficiais do docker
-            ```console
+```console
                 $ sudo mkdir -p /etc/apt/keyrings
                 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-            ```
+```
         Use os comando abaixos para carregar o repositorio de pacotes
-            ```console
+```console
                 $ echo \
                 "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
                 $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-            ```
+```
         ### Instalação do Docker Engine
-            ```console
+```console
                 $ sudo apt-get update
                 $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-            ```
+```
 ### Após a instalação das dependecias você deve execultar o comando de instalação do docker desktop
-    ```console
+```console
         $ sudo apt install ./docker-desktop-4.10.1-amd64.deb
-    ```
+```
 ## Instalando a Imagem e o Container de MySQL no docker
 ### Vamos usar volume neste exemplo
     Crie uma pasta(diretório) chamada data_docker, no home do usuário, execulte o seguinte comando:
-        ```console
+```console
            $ docker run --name servidor-mysql -v ~/data_docker:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=hiago123 -d mysql:8.0.29
-       ```
+```
     Agora, abra o docker-desktop e veja o seu container rodando.
+
+<div align="center">
+<img src="dockerdesktop.png" width="650" heigth="350"/>
+</div>
